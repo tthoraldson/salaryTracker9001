@@ -1,11 +1,33 @@
 @charset "UTF-8";
-/* CSS Document */
+/* Elements */
+
 h1 {
-	font-size: 3em;
-	text-align: center;
+	font-size: 2em;
 }
 
 h2 {
-	font-size: 2.5em;
+	font-size: 1.25em;
+}
+
+header {
+	margin: 0 0;
+	background-color: #DD0CBE;
+}
+
+main {
+	text-content: center;
+}
+
+footer {
+	background-color: blue;
+	color: white;
+	text-align: center;
+}
+
+table {
+}
+
+/* Classes */
+.centerme {
 	text-align: center;
 }

@@ -2,12 +2,64 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="app.js"></script>
-    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" >
 	<title>Salary Tracker 9,001</title>
 	</head>
 	<body>
-    	<h1>Salary Tracker 9,001</h1>
-    	<h2 class="greeting">Welcome!</h2>
+    	<header>
+            <h1 id="logo">Salary Tracker 9,001</h1>
+            <h2 id="greeting">Welcome!</h2>
+        </header>
+        <main>
+        	<table align="center">
+            	<tr>
+                	<th>Employee's Name</th>
+                    <th>Employee's ID</th>
+                    <th>Employee's Position</th>
+                    <th>Employee's Salary</th> 
+                </tr>
+                <tr>
+                	<th>John Smith</th>
+                    <th>1</th>
+                    <th>Janitor</th>
+                    <th>30000</th>
+                </tr>
+                <tr>
+                	<th>Danny Phantom</th>
+                    <th>2</th>
+                    <th>Ghost Hunter</th>
+                    <th>45000</th>
+                </tr>
+                <tr>
+                	<th>Elon Musk</th>
+                    <th>3</th>
+                    <th>CEO</th>
+                    <th>135000</th>
+                </tr>
+            </table>
+            
+            <h2 class="centerme">Add a new employee!</h2>
+            
+            <form id="employeeinfo" align="center">
+        		<label for="firstName">First Name:</label>
+        		<input type="text" id="firstname" name="firstname">
+				<br>
+        		<label for="lastname">Last Name:</label>
+        		<input type="text" id="lastName" name="lastName">
+				<br>
+                <label for="positionName">Position:</label>
+        		<input type="text" id="positionName" name="positionName">
+                <br>
+                <label for="salaryName">Salary (Yearly):</label>
+        		<input type="text" id="salaryName" name="salaryName">
+                <br>
+        		<input type="submit" value="Submit Employee">
+      		</form>
+        </main>
+        <footer>
+        	<h2>HELLO YES I'M THE FOOTER</h2>
+        </footer>
 	</body>
 </html>
