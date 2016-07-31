@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="app.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Average+Sans|Galada' rel='stylesheet' type='text/css'>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="stylesheet" href="stylesheet.css" >
 	<title>Salary Tracker 9,001</title>
 	</head>
@@ -14,7 +15,7 @@
             <h2 id="greeting">Welcome!</h2>
         </header>
         <main>
-        	<h2 class="">Montly Salary Cost:</h2><h2 class="monthlyTotal"></h2>
+        	<h2 class="">Montly Salary Cost:</h2><h2 class="monthlyTotal">$0</h2>
         	<table align="center" class="table">
             	<tr>
                 	<th class="tableHead">Employee's Name</th>
@@ -23,27 +24,41 @@
                     <th class="tableHead">Employee's ID</th>
                 </tr>
             </table>
-            <br><br>
+            <br>
+            <button>Add a new Employee</button>&nbsp;<button>Delete an Employee</button>
+            <div id="addEmployee">
             <h2 class="centerme">Add a new employee!</h2>
-            
-            <form id="employeeinfo" align="center">
-        		<label for="firstName">First Name:</label>
-        		<input type="text" id="firstName" name="firstName">
-				<br>
-        		<label for="lastname">Last Name:</label>
-        		<input type="text" id="lastName" name="lastName">
-				<br>
-                <label for="positionName">Position:</label>
-        		<input type="text" id="positionName" name="positionName">
-                <br>
-                <label for="salaryName">Salary (Yearly):</label>
-        		<input type="text" id="salaryName" name="salaryName">
-                <br>
-        		<input type="submit" value="Add Employee">
-      		</form>
+                <form id="employeeinfo" align="center">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <br>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <br>
+                    <label for="positionName">Position:</label>
+                    <input type="text" id="positionName" name="positionName">
+                    <br>
+                    <label for="salaryName">Salary (Yearly):</label>
+                    <input type="text" id="salaryName" name="salaryName">
+                    <br>
+                    <input type="submit" value="Add Employee">
+                </form>
+            </div>
+            <div id="delEmployee">
+            	<h2>Delete an Employee!</h2>
+                <form id="deleteEmployee" align="center">
+                	<label for="empID">Employee ID</label>
+                    <input type="text" id="empID" name="empID">
+                    <br>
+                    <input type="submit" value="Delete Employee">
+                </form>
+            </div>
+            <br>
         </main>
         <footer>
-        	<h2>HELLO YES I'M THE FOOTER</h2>
+        	<div class="ghButtons">
+				<a class="github-button" href="https://github.com/tthoraldson" aria-label="Follow @tthoraldson on GitHub">Follow @tthoraldson</a>&nbsp;<a class="github-button" href="https://github.com/tthoraldson/salaryTracker9001" data-icon="octicon-star" aria-label="Star tthoraldson/salaryTracker9001 on GitHub">Star</a>&nbsp;<a class="github-button" href="https://github.com/tthoraldson/salaryTracker9001/issues" data-icon="octicon-issue-opened" aria-label="Issue tthoraldson/salaryTracker9001 on GitHub">Issue</a>
+        	</div>
         </footer>
 	</body>
 </html>

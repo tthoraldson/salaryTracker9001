@@ -60,4 +60,8 @@ th {
 .monthlyTotal {
 	text-align: center;
 }
+
+.ghButtons {
+	padding-top: 2px;	
+}
 /* IDs */

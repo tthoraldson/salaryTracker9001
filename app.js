@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
 	var employees = []; 																			//where the employee objects are stored
 
 
@@ -36,12 +38,11 @@ $(document).ready(function() {
 
 		// Calculates the final monthly salary cost and displays it on the DOM
 		var combinedSalaries = 0;
-		var monthlySalaries = 0;
 		employees.forEach(function(employee, i){
 				combinedSalaries = combinedSalaries + parseInt(employees[i].salaryName);
 		});
 
-		monthlySalaries = combinedSalaries / 12;
+		var monthlySalaries = (combinedSalaries / 12).toFixed(2);
 
 		$('.monthlyTotal').empty();
 		$('.monthlyTotal').append(' $' + monthlySalaries);
