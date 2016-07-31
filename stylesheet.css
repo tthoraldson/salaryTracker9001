@@ -1,12 +1,23 @@
 @charset "UTF-8";
 /* Elements */
+* {
+	font-family: 'Average Sans', 'Times New Roman';
+}
 
 h1 {
-	font-size: 2em;
+	font-size: 2.5em;
+	font-family: 'Galada', cursive;
+	padding: 5px 5px 5px 10px;
+	margin-bottom: 0;
+	line-height: 1.25
 }
 
 h2 {
 	font-size: 1.25em;
+	margin: 0;
+	padding: 3px 3px 3px 10px;
+	line-height: 1.25;
+	
 }
 
 header {
@@ -15,7 +26,8 @@ header {
 }
 
 main {
-	text-content: center;
+	text-align: center;
+	
 }
 
 footer {
@@ -25,9 +37,27 @@ footer {
 }
 
 table {
+	border: 1px;
+	
 }
 
+tr .tableHead {
+	background-color: light-blue;
+}
+
+th {
+	background-color: light-blue;
+}
 /* Classes */
 .centerme {
 	text-align: center;
 }
+
+.tableHead {
+	font-weight: bold;
+}
+
+.monthlyTotal {
+	text-align: center;
+}
+/* IDs */
