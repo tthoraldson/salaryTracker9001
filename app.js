@@ -22,6 +22,7 @@ $(document).ready(function() {
 	//console.log(employees);
 
 	$('#employeeinfo').find('input[type=text]').val('');			// clears all the values in the form
+	$('#employeeinfo').find('input[type=number]').val('');
 
 	// APPEND THE DOM ... ADDS TO THE TABLE!
 	$('.employee').remove(); 																	// clears the table
@@ -47,7 +48,7 @@ $(document).ready(function() {
 			$(this).remove();
 		});
 		});
-		
+
 		// Calculates the final monthly salary cost and displays it on the DOM
 		var totalSal = 0;
 		var sals = function(){
