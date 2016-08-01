@@ -7,12 +7,12 @@
     <link href='https://fonts.googleapis.com/css?family=Average+Sans|Galada' rel='stylesheet' type='text/css'>
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
     <link rel="stylesheet" href="stylesheet.css" >
+    <link rel="icon" href="icon.png">
 	<title>Salary Tracker 9,001</title>
 	</head>
 	<body>
     	<header>
             <h1 id="logo">Salary Tracker 9,001</h1>
-            <h2 id="greeting">Welcome!</h2>
         </header>
         <main>
         	<h2 class="">Montly Salary Cost:</h2><h2 class="monthlyTotal">$0</h2>
@@ -22,10 +22,10 @@
                     <th class="tableHead">Employee's Position</th>
                     <th class="tableHead">Employee's Salary</th> 
                     <th class="tableHead">Employee's ID</th>
+                    <th class="tableHead">Delete</th>
                 </tr>
             </table>
             <br>
-            <button>Add a new Employee</button>&nbsp;<button>Delete an Employee</button>
             <div id="addEmployee">
             <h2 class="centerme">Add a new employee!</h2>
                 <form id="employeeinfo" align="center">
@@ -41,16 +41,7 @@
                     <label for="salaryName">Salary (Yearly):</label>
                     <input type="text" id="salaryName" name="salaryName">
                     <br>
-                    <input type="submit" value="Add Employee">
-                </form>
-            </div>
-            <div id="delEmployee">
-            	<h2>Delete an Employee!</h2>
-                <form id="deleteEmployee" align="center">
-                	<label for="empID">Employee ID</label>
-                    <input type="text" id="empID" name="empID">
-                    <br>
-                    <input type="submit" value="Delete Employee">
+                    <input type="submit" name="submit1" value="Add Employee">
                 </form>
             </div>
             <br>
