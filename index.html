@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Average+Sans|Galada' rel='stylesheet' type='text/css'>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" >
+    <link rel="icon" href="icon.png">
+	<title>Salary Tracker 9,001</title>
+	</head>
+	<body>
+    	<header>
+            <h1 id="logo">Salary Tracker 9,001</h1>
+        </header>
+        <main>
+        	<h2 class="">Montly Salary Cost:</h2><h2 class="monthlyTotal">$0</h2>
+        	<table align="center" class="table">
+            	<tr>
+                	<th class="tableHead">Employee's Name</th>
+                    <th class="tableHead">Employee's Position</th>
+                    <th class="tableHead">Employee's Salary</th> 
+                    <th class="tableHead">Employee's ID</th>
+                    <th class="tableHead">Delete</th>
+                </tr>
+            </table>
+            <br>
+            <div id="addEmployee">
+            <h2 class="centerme">Add a new employee!</h2>
+                <form id="employeeinfo" align="center">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                    <br>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <br>
+                    <label for="positionName">Position:</label>
+                    <input type="text" id="positionName" name="positionName">
+                    <br>
+                    <label for="salaryName">Salary (Yearly):</label>
+                    <input type="number" id="salaryName" name="salaryName">
+                    <br>
+                    <input type="submit" name="submit1" value="Add Employee">
+                </form>
+            </div>
+            <br>
+        </main>
+        <footer>
+        	<div class="ghButtons">
+				<a class="github-button" href="https://github.com/tthoraldson" aria-label="Follow @tthoraldson on GitHub">Follow @tthoraldson</a>&nbsp;<a class="github-button" href="https://github.com/tthoraldson/salaryTracker9001" data-icon="octicon-star" aria-label="Star tthoraldson/salaryTracker9001 on GitHub">Star</a>&nbsp;<a class="github-button" href="https://github.com/tthoraldson/salaryTracker9001/issues" data-icon="octicon-issue-opened" aria-label="Issue tthoraldson/salaryTracker9001 on GitHub">Issue</a>
+        	</div>
+        </footer>
+	</body>
+</html>
