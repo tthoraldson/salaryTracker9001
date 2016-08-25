@@ -2,7 +2,7 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="angular.min.js"></script>
 	<script src="app.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Average+Sans|Galada' rel='stylesheet' type='text/css'>
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -10,38 +10,45 @@
     <link rel="icon" href="icon.png">
 	<title>Salary Tracker 9,001</title>
 	</head>
-	<body>
+	<body ng-app="myApp">
     	<header>
             <h1 id="logo">Salary Tracker 9,001</h1>
         </header>
-        <main>
-        	<h2 class="">Montly Salary Cost:</h2><h2 class="monthlyTotal">$0</h2>
+        <main ng-controller="employeeController">
+        	<h2 class="">Montly Salary Cost:</h2><h2 class="monthlyTotal">${{combinedSalaries}}</h2>
         	<table align="center" class="table">
             	<tr>
                 	<th class="tableHead">Employee's Name</th>
                     <th class="tableHead">Employee's Position</th>
-                    <th class="tableHead">Employee's Salary</th> 
+                    <th class="tableHead">Employee's Salary</th>
                     <th class="tableHead">Employee's ID</th>
                     <th class="tableHead">Delete</th>
                 </tr>
+								<tr ng-repeat="employee in employees track by $index">
+									<td>{{employee.firstName + ' ' + employee.lastName}}</td>
+									<td>{{employee.positionName}}</td>
+									<td>{{employee.salaryName}}</td>
+									<td>{{employee.id}}</td>
+									<td><button ng-click="deleteEmployee(employee.id)" ng-if="(employees[employee.id - 1] == undefined) == false">Delete</button></td>
+								</tr>
             </table>
             <br>
             <div id="addEmployee">
             <h2 class="centerme">Add a new employee!</h2>
                 <form id="employeeinfo" align="center">
                     <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <input type="text" id="firstName" name="firstName" ng-model="firstName">
                     <br>
                     <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName">
+                    <input type="text" id="lastName" name="lastName" ng-model="lastName">
                     <br>
                     <label for="positionName">Position:</label>
-                    <input type="text" id="positionName" name="positionName">
+                    <input type="text" id="positionName" name="positionName" ng-model="positionName">
                     <br>
                     <label for="salaryName">Salary (Yearly):</label>
-                    <input type="number" id="salaryName" name="salaryName">
+                    <input type="number" id="salaryName" name="salaryName" ng-model="salaryName">
                     <br>
-                    <input type="submit" name="submit1" value="Add Employee">
+                    <input type="submit" name="submit1" value="Add Employee" ng-click="addEmployee()">
                 </form>
             </div>
             <br>
