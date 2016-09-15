@@ -8,5 +8,5 @@ Keep track of those salaries with the Salary Tracker 9001!
 * Add and delete employees
 * View monthly salary budget
 
-### #PRO MODE :us::us::us::us::us:
+### #PRO MODE :us::us::us::us::us::us:
 
